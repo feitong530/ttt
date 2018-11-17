@@ -1,28 +1,26 @@
 package com.delaroystudios.sidemenu.fragment;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
 
 import com.delaroystudios.sidemenu.R;
 import com.delaroystudios.sidemenu.fragment.about_next.faculty_fragment;
 
+
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 
-/**
- * Created by delaroy on 11/2/17.
- */
 
-public class AboutFragment extends Fragment implements ScreenShotable {
 
-    private View containerView;
-    protected ImageView mImageView;
+
+public class AboutFragment extends android.support.v4.app.Fragment implements ScreenShotable {
+
+   // private View containerView;
+   // protected ImageView mImageView;
     protected int res;
     private Bitmap bitmap;
 
@@ -37,9 +35,14 @@ public class AboutFragment extends Fragment implements ScreenShotable {
         btn_faculty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FragmentTransaction a1=getFragmentManager().beginTransaction();
-                a1.replace(R.id.container_frame,new faculty_fragment());
-                a1.addToBackStack(null).commit();
+//                FragmentTransaction a1=getFragmentManager().beginTransaction();
+//                a1.replace(R.id.container_frame,new faculty_fragment());
+//                a1.addToBackStack(null).commit();
+                //Toast.makeText(getActivity(), "调用aboutThis()函数，然后启动一个新界面，【软件】", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(getActivity().getApplicationContext(),faculty_fragment.class);
+                startActivity(intent);
+
             }
         });
         //------------
@@ -62,5 +65,8 @@ public class AboutFragment extends Fragment implements ScreenShotable {
     public Bitmap getBitmap() {
         return null;
     }
+
+
+
 }
 

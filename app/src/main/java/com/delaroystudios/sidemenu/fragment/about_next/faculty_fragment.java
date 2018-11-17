@@ -1,18 +1,40 @@
 package com.delaroystudios.sidemenu.fragment.about_next;
-
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import com.delaroystudios.sidemenu.R;
 
-public class faculty_fragment extends Fragment {
+import java.util.ArrayList;
+
+public class faculty_fragment extends AppCompatActivity {
 
 
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.about_faculty, container, false);
-        return rootView;
-    }}
+
+//    Button btn_seefac;
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.about_faculty);
+        Button btn_seefac=(Button)findViewById(R.id.btn_seeFacImage);
+        btn_seefac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openFaultyImage();
+
+            }
+
+        });
+
+        }
+        private void openFaultyImage(){
+            Intent intent = new Intent(getBaseContext(), faculty_image.class);
+            //只需进入faculty_image 即可
+            startActivity(intent);
+        }
+
+}

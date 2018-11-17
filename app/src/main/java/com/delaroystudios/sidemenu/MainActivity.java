@@ -2,6 +2,8 @@ package com.delaroystudios.sidemenu;
 
 import android.app.FragmentTransaction;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -16,6 +18,8 @@ import android.view.animation.AccelerateInterpolator;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -192,11 +196,7 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
         AboutFragment aboutFragment = new AboutFragment();
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.content_frame, aboutFragment).commit();
-        //--------
-//        android.support.v4.app.FragmentTransaction fragmentTransaction= getSupportFragmentManager().beginTransaction();
-//        fragmentTransaction.add(R.id.container_frame,new AboutFragment());
-//        fragmentTransaction.commit();
-        //------------
+
          return aboutFragment;
     }
     private ScreenShotable replacePaintFragment(ScreenShotable screenShotable, int topPosition) {
@@ -310,4 +310,7 @@ public class MainActivity extends AppCompatActivity implements ViewAnimator.View
     public void addViewToContainer(View view) {
         linearLayout.addView(view);
     }
+
 }
+
+

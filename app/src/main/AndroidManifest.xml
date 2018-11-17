@@ -17,6 +17,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".fragment.about_next.faculty_fragment" />
+
+
+
     </application>
 
 </manifest>
