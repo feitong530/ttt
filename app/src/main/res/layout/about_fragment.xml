@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/blueback">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/blueback">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical"
+            android:backgroundTint="@color/blueback">
+
+            <Button
+                android:id="@+id/btn_fac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@drawable/content_btn"
+                android:text="FACULTY"
+                android:textAllCaps="false"
+                android:textColor="@color/blueback"
+                android:textSize="36sp"
+                android:typeface="normal" />
+
+            <Button
+                android:id="@+id/btn_mes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:background="@drawable/content_btn"
+                android:text="MESSAGE FROM PROGRAMME DIRECTOR"
+                android:textColor="@color/blueback"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/btn_hku"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:background="@drawable/content_btn"
+                android:text="ABOUT HKU"
+                android:textColor="@color/blueback"
+                android:textSize="36sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>
