@@ -20,7 +20,11 @@
             android:layout_height="match_parent"
 
             android:orientation="vertical"
-            android:backgroundTint="@color/blueback">
+            android:backgroundTint="@color/blueback"
+
+            android:fontFamily="casual"
+            android:textAllCaps="true"
+            android:textStyle="bold">
 
             <Button
                 android:id="@+id/btn_req"
@@ -32,7 +36,10 @@
                 android:text="ADMISSION REQUIREMENTS"
                 android:textAllCaps="true"
                 android:textColor="@color/blueback"
-                android:textSize="30sp"/>
+                android:textSize="30sp"
+
+                android:fontFamily="casual"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/btn_pro"
@@ -43,7 +50,11 @@
                 android:background="@drawable/content_btn"
                 android:text="ADMISSION PROCEDURES"
                 android:textColor="@color/blueback"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/btn_fee"
@@ -54,7 +65,11 @@
                 android:background="@drawable/content_btn"
                 android:text="COMPOSITION FEES"
                 android:textColor="@color/blueback"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
             <Button
                 android:id="@+id/btn_wor"
                 android:layout_width="match_parent"
@@ -64,7 +79,11 @@
                 android:background="@drawable/content_btn"
                 android:text="WORDS FROM STUDENTS AND GRADUATES"
                 android:textColor="@color/blueback"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
             <Button
                 android:id="@+id/btn_ins"
                 android:layout_width="match_parent"
@@ -74,7 +93,11 @@
                 android:background="@drawable/content_btn"
                 android:text="INFORMATION SESSION"
                 android:textColor="@color/blueback"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
+
             <Button
                 android:id="@+id/btn_faq"
                 android:layout_width="match_parent"
@@ -84,7 +107,11 @@
                 android:background="@drawable/content_btn"
                 android:text="FAQ"
                 android:textColor="@color/blueback"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+            />
         </LinearLayout>
         </ScrollView>
     </FrameLayout>

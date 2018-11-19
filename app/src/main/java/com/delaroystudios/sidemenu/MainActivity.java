@@ -1,9 +1,6 @@
 package com.delaroystudios.sidemenu;
 
-import android.app.FragmentTransaction;
 import android.content.res.Configuration;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -15,11 +12,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AccelerateInterpolator;
-import android.widget.Button;
 import android.widget.LinearLayout;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,8 +23,8 @@ import yalantis.com.sidemenu.interfaces.Resourceble;
 import yalantis.com.sidemenu.interfaces.ScreenShotable;
 import yalantis.com.sidemenu.model.SlideMenuItem;
 
-import com.delaroystudios.sidemenu.fragment.AdmissionFragment;
-import com.delaroystudios.sidemenu.fragment.AboutFragment;
+import com.delaroystudios.sidemenu.fragment.admission_next.AdmissionFragment;
+import com.delaroystudios.sidemenu.fragment.about_next.AboutFragment;
 import com.delaroystudios.sidemenu.fragment.AlumniFragment;
 import com.delaroystudios.sidemenu.fragment.ContentFragment;
 import com.delaroystudios.sidemenu.fragment.MovieFragment;

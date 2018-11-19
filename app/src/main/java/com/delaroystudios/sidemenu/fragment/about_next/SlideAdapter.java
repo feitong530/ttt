@@ -22,22 +22,17 @@ public class SlideAdapter extends PagerAdapter {
             R.drawable.bebowhite_jpg,
             R.drawable.chan_h_t_h___jpg,
             R.drawable.chan_k_p__jpg,
-            R.drawable.cheng_r_c_k__jpg
+            R.drawable.chimtw_jpg
     };
     // list of titles
     public String[] lst_title = {
-            "COSMONAUT",
-            "SATELITE",
-            "GALAXY",
-            "ROCKET"
+            "Prof.White.B",
+            "DrChan.H.T.H",
+            "Dr.Chan.k.p",
+            "Dr.Chim.T.W"
     }   ;
     // list of descriptions
-    public String[] lst_description = {
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,",
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,"
-    };
+    public String[] lst_description;
     // list of background colors
     public int[]  lst_backgroundcolor = {
             Color.rgb(55,55,55),
@@ -49,6 +44,14 @@ public class SlideAdapter extends PagerAdapter {
 
     public SlideAdapter(Context context) {
         this.context = context;
+
+        lst_description = new String[]{
+                context.getString(R.string.ProfWhiteB),
+                context.getString(R.string.DrChanHTH),
+                context.getString(R.string.DrChanKP),
+                context.getString(R.string.DrChimTW)
+                  };
+
     }
 
     @Override
@@ -64,10 +67,10 @@ public class SlideAdapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         inflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
-        View view = inflater.inflate(R.layout.about_faculty_image_slide,container,false);
+        View view = inflater.inflate(R.layout.about_faculty_image,container,false);
         LinearLayout layoutslide = (LinearLayout) view.findViewById(R.id.slidelinearlayout);
         ImageView imgslide = (ImageView)  view.findViewById(R.id.slideimg);
-        TextView txttitle= (TextView) view.findViewById(R.id.txtdescription);
+        TextView txttitle= (TextView) view.findViewById(R.id.txttitle);
         TextView description = (TextView) view.findViewById(R.id.txtdescription);
         layoutslide.setBackgroundColor(lst_backgroundcolor[position]);
         imgslide.setImageResource(lst_images[position]);

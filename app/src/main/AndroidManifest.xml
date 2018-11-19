@@ -18,7 +18,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".fragment.about_next.faculty_fragment" />
-
+        <activity android:name=".fragment.about_next.faculty_image" />
+        <activity android:name=".fragment.about_next.message_fragment" />
+        <activity android:name=".fragment.about_next.hku_fragment" />
 
 
     </application>

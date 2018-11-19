@@ -26,10 +26,12 @@
                 android:layout_weight="0.3"
                 android:background="@drawable/content_btn"
                 android:text="FACULTY"
-                android:textAllCaps="false"
                 android:textColor="@color/blueback"
                 android:textSize="36sp"
-                android:typeface="normal" />
+                android:typeface="normal"
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/btn_mes"
@@ -39,7 +41,10 @@
                 android:background="@drawable/content_btn"
                 android:text="MESSAGE FROM PROGRAMME DIRECTOR"
                 android:textColor="@color/blueback"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
 
             <Button
                 android:id="@+id/btn_hku"
@@ -49,7 +54,10 @@
                 android:background="@drawable/content_btn"
                 android:text="ABOUT HKU"
                 android:textColor="@color/blueback"
-                android:textSize="36sp" />
+                android:textSize="36sp"
+                android:fontFamily="casual"
+                android:textAllCaps="true"
+                android:textStyle="bold"/>
         </LinearLayout>
 
     </FrameLayout>

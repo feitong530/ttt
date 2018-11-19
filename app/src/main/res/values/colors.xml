@@ -4,8 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="colorWhite">#FFFFFF</color>
-    <color name="yelllowword">#edca2c</color>
+    <color name="yelllowword">#e5b9af</color>
     <color name="blueback">#03364e</color>
-    <color name="yellowdark">#FFC68E0D</color>
+    <color name="yellowdark">#c7a49e</color>
 
 </resources>

@@ -31,7 +31,10 @@
                     android:text="programme overview"
                     android:textAllCaps="true"
                     android:textColor="@color/blueback"
-                    android:textSize="30sp"/>
+                    android:textSize="30sp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"
+                />
 
                 <Button
                     android:id="@+id/btn_cou"
@@ -44,7 +47,10 @@
                     android:text="courses"
                     android:textAllCaps="true"
                     android:textColor="@color/blueback"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:fontFamily="casual"/>
+
 
                 <Button
                     android:id="@+id/btn_dur"
@@ -57,7 +63,9 @@
                     android:text="duration of study ＆ class schedule "
                     android:textAllCaps="true"
                     android:textColor="@color/blueback"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"/>
                 <Button
                     android:id="@+id/btn_reg"
                     android:layout_width="match_parent"
@@ -69,7 +77,9 @@
                     android:text="regulations ＆ syllabus"
                     android:textAllCaps="true"
                     android:textColor="@color/blueback"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:fontFamily="casual"
+                    android:textStyle="bold"/>
 
             </LinearLayout>
 
