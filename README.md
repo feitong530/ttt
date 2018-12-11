@@ -12,3 +12,24 @@ This project is to provide a mobile version of homepage of MSc(CS) programme off
 ## steps showed in gif
 
 ![image](https://github.com/feitong530/ttt/blob/master/steps.gif)
+
+## acknowledgement
+https://github.com/Yalantis/Side-Menu.Android  
+
+## files 
+classes in the fragment folder can be use to control actions in each fragment.  
+for example
+```
+AboutFragment
+```
+is use to control contents and actions in the 'About' column
+
+```
+MainActivity.class
+```
+is use to control foremost actions of the project including actions of side menu 
+
+the main layout was put in the .xml file
+```
+activity_main.xml
+```
