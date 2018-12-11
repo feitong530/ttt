@@ -9,4 +9,6 @@ This project is to provide a mobile version of homepage of MSc(CS) programme off
 3.Launch your own Virtual Device or Android Phone
 4.Click the Green Arrow Button to run this App
 
-![image](picture or gif url)
+## steps showed in gif
+Getting Started
+![image](ttt/steps.gif)
