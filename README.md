@@ -12,4 +12,4 @@ This project is to provide a mobile version of homepage of MSc(CS) programme off
 ## steps showed in gif
 Getting Started
 
-![image](https://github.com/feitong530/ttt/steps.gif)
+![image](https://github.com/feitong530/ttt/blob/master/steps.gif)
