@@ -9,14 +9,14 @@ This project is to provide a mobile version of homepage of MSc(CS) programme off
   3.Launch your own Virtual Device or Android Phone(Nexus S API23 recommended).   
   4.Click the running Button to run this App  
 
-## steps showed in gif
+## Steps showed in gif
 
 ![image](https://github.com/feitong530/ttt/blob/master/steps.gif)
 
-## acknowledgement
+## Acknowledgement
 https://github.com/Yalantis/Side-Menu.Android  
 
-## files 
+## Files 
 classes in the fragment folder can be use to control actions in each fragment.  
 for example
 ```
